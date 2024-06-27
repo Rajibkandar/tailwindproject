@@ -1,0 +1,26 @@
+.flip-icon {
+    transition: transform 0.3s;
+}
+.card:hover .flip-icon {
+    transform: rotateY(180deg);
+}
+.custom-gradient {
+    background: linear-gradient(to bottom, #fb923c, #facc15);
+}
+.menu-hidden {
+    transform: translateX(100%);
+}
+.menu-visible {
+    transform: translateX(0);
+}
+.menu-transition {
+    transition: transform 0.3s ease-in-out;
+}
+.mask {
+    mask-image: url('../Assets/hero-img-shape.png');
+    mask-size: 60%;
+    mask-repeat: no-repeat; 
+    mask-position: center; 
+    width: 100%; 
+    height: auto; 
+}

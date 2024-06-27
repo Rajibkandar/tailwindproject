@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 overflow-x-hidden">
+    <!-- topbar -->
+    <div class="hidden lg:block bg-gray-800 text-white py-3">
+        <div class="container pl-20 pr-20 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="flex-items-center space-x-1">
+                    <i class="fa-regular fa-envelope" style="color: rgb(238, 159, 12);"></i>
+                    <a href="mailto:info@therehmatfoundation.ca" class="text-sm">info@therehmatfoundation.ca</a>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-phone" style="color: rgb(230, 154, 13);"></i>
+                    
+                    <span class="text-sm">+1-(647) 284 3933</span>
+                </div>
+
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="text-sm"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-sm"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-sm"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- header  -->
+    <nav class="bg-white relative z-10 hidden lg:block">
+        <div class="container ml-20 mr-10 py-3 flex md:justify-between md:items-center">
+            <a href="#">
+                <img src="../Assets/asset 0.png" alt="" class="h-20 w-50">
+            </a>
+            <ul class="hidden md:flex justify-between items-center gap-8 mr-20">
+                <li><a href="index.html" class="text-lg text-gray-700 hover:text-orange-600">Home</a></li>
+                <li class="relative group">
+                    <a href="" class="text-lg text-gray-700 hover:text-orange-600">About us</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <ul class="absolute left-0 mt-0 hidden bg-white shadow-lg group-hover:block z-20">
+                        <li><a href="aboutus.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About us</a></li>
+                        <li><a href="philosophy.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Philosophy</a></li>
+                    </ul>
+                </li>
+                <li class="relative group">
+                    <a href="index.html" class="text-lg text-gray-700 hover:text-orange-600">Services</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <ul class="absolute left-0 mt-0 hidden bg-white shadow-lg group-hover:block z-20">
+                        <li><a href="education.html" class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100">Education</a></li>
+                        <li><a href="nutrition.html" class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100">Nutrition</a></li>
+                        <li><a href="elderlycare.html" class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100">Elderly care</a></li>
+                        <li><a href="empowerment.html" class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100">Empowerment</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html" class="text-lg text-gray-700 hover:text-orange-600">Our Team</a></li>
+                <li class="relative group">
+                    <a href="#" class="text-lg text-gray-700 hover:text-orange-600">Donate Now</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <ul class="absolute left-0 mt-0 hidden bg-white shadow-lg group-hover:block z-20">
+                        <li><a href="makedonation.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Make a donation</a></li>
+                        <li><a href="goodandservices.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Donation of goods and services</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html" class="text-lg text-gray-700 hover:text-orange-600">Contact Us</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <nav class="lg:hidden">
+        <div class="flex justify-between items-center px-4 py-3 bg-white shadow-md">
+            <a href="#">
+                <img src="../Assets/asset 0.png" alt="" class="h-12 w-auto">
+            </a>
+            <button id="burger" class="text-gray-700 focus:outline-none">
+                <i class="fa-solid fa-bars text-3xl"></i>
+            </button>
+        </div>
+
+        <!-- Sliding menu -->
+        <div id="menu" class="fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg transform menu-hidden menu-transition z-50">
+            <div class="pl-4 flex flex-col mb-8 gap-8 mt-3">
+                <button id="close" class="text-gray-700 focus:outline-none self-end pr-4 pt-4">
+                    <i class="fa-solid fa-times text-3xl"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html" class="text-lg text-gray-700 hover:text-orange-600">Home</a></li>
+                    <li class="relative group">
+                        <a href="#" class="text-lg text-gray-700 hover:text-orange-600">About us</a>
+                        <ul class="absolute left-0 mt-0 hidden bg-white shadow-lg group-hover:block z-20">
+                            <li><a href="aboutus.html" class="block px-4 py-2 text-gray-700 hover:text-orange-600">About us</a></li>
+                            <li><a href="philosophy.html" class="block px-4 py-2 text-gray-700 hover:text-orange-600">Philosophy</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-lg text-gray-700 hover:text-orange-600">Services</a>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="absolute left-0 mt-0 hidden bg-white hover:text-orange-600 shadow-lg group-hover:block z-20">
+                            <li><a href="education.html" class="text-lg block px-4 py-2 text-gray-700 hover:text-orange-600">Education</a></li>
+                            <li><a href="nutrition.html" class="text-lg block px-4 py-2 text-gray-700 hover:text-orange-600">Nutrition</a></li>
+                            <li><a href="elderlycare.html" class="text-lg block px-4 py-2 text-gray-700 hover:text-orange-600">Elderly care</a></li>
+                            <li><a href="empowerment.html" class="text-lg block px-4 py-2 text-gray-700 hover:text-orange-600">Empowerment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="team.html" class="text-lg text-gray-700 hover:text-orange-600">Our Team</a></li>
+                    <li class="relative group">
+                        <a href="#" class="text-lg text-gray-700 hover:text-orange-600">Donate Now</a>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="absolute left-0 mt-0 hidden bg-white shadow-lg group-hover:block z-20">
+                            <li><a href="makedonation.html" class="block px-4 py-2 text-gray-700 hover:text-orange-600">Make a donation</a></li>
+                            <li><a href="goodandservices.html" class="block px-4 py-2 text-gray-700 hover:text-orange-600">Donation of goods and services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.html" class="text-lg text-gray-700 hover:text-orange-600">Contact Us</a></li>
+                </ul>
+                <div class="bg-gray-100 pl-4">
+                    <h2 class="text-lg font-semibold text-gray-700">Contact Info</h2>
+                    <p class="mt-2 text-gray-600">
+                        <span class="block">2560 Matheson Blvd E, Suite 521 Mississauga, Ontario, L4W4Y9</span>
+                        <span class="block mt-2">📧 info@therehmatfoundation.ca</span>
+                        <span class="block mt-2">📞 +1-(647) 284 3933</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+<div class="relative">
+    <img src="../Assets/banners.jpeg" alt="Background Image" class="w-full h-64 object-cover">
+    
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+        <div class="text-sm mb-2">
+            <a href="#" class="text-gray-300 hover:text-yellow-500">Home</a>
+            <span class="mx-1 text-gray-300">></span>
+            <span class="text-yellow-500">Our Team</span>
+        </div>
+        <h1 class="text-4xl font-bold">Our Team</h1>
+    </div>
+</div>
+
+
+<section class="py-12 gradient-bg">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="bg-white shadow-md rounded-lg p-4">
+            <img src="../Assets/jasleen.jpg" alt="Founder" class="w-56 h-[14rem] mx-auto mb-4">
+            <h3 class="text-2xl font-bold">Dr. Jasleen Dhoot</h3>
+            <p class="mt-2 text-lg">Founder</p>
+        </div>
+    </div>
+</section>
+
+<!-- Board Members Section -->
+<section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Board Members</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Board Member Cards -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <img src="../Assets/im.jpeg" alt="Amar Dhoot" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold">Amar Dhoot</h3>
+                <p class="mt-2">Designation</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <img src="../Assets/ime.jpeg" alt="Vasneet" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold">Vasneet</h3>
+                <p class="mt-2">Designation</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <img src="../Assets/ime.jpeg" alt="Dr. Jasleen Dhoot" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold">Dr. Jasleen Dhoot</h3>
+                <p class="mt-2">Designation</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <img src="../Assets/im.jpeg" alt="Bhupenderjit Dhoot" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold">Bhupenderjit Dhoot</h3>
+                <p class="mt-2">Designation</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <img src="../Assets/im.jpeg" alt="Ravipal" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold">Ravipal</h3>
+                <p class="mt-2">Designation</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <img src="../Assets/im.jpeg" alt="Parmin Singh Dhoot" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold">Parmin Singh Dhoot</h3>
+                <p class="mt-2">Designation</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Advisory Board Members Section -->
+<section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Advisory Board Members</h2>
+        <div class="flex justify-center">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <img src="../Assets/im.jpeg" alt="CPA Naveen Rana" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold">CPA Naveen Rana</h3>
+                <p class="mt-2">Designation</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="bg-gray-800 py-10">
+    <div class="max-w-7xl mx-auto pl-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div>
+                <img src="../Assets/asset 0.png" alt="Logo" class="mb-4">
+                <p class="text-gray-300 mb-4">
+                    The Rehmat Foundation is dedicated to empowering vulnerable individuals and communities through holistic support and sustainable initiatives. We strive to foster self-reliance, dignity, and hope among those in need.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Useful Links</h3>
+                <ul>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">About Us</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Our Philosophy</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Our Team</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+
+        
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Services</h3>
+                <ul>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Education</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Nutrition</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Elderly Care</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Empowerment</a></li>
+                </ul>
+            </div>
+
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Contact Us</h3>
+                <p class="text-gray-300 mb-2">2160 Metamora Blvd F, Suite 252 Mississauga, Ontario, L4W4Y9</p>
+                <p class="text-gray-300 mb-2">info@therehmatfoundation.ca</p>
+                <p class="text-gray-300">+1 (424) 295 9555</p>
+            </div>
+        </div>
+
+        <div class="mt-10 border-t border-gray-700 pt-4 flex justify-between text-gray-300 text-sm">
+            <p>&copy; The Rehmat Foundation - Copyright 2024. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
